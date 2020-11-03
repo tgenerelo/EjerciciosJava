@@ -16,6 +16,13 @@ public class Ejercicio5 {
 		num2=leer.nextInt();
 		System.out.println("Introduce otro número:");
 		num3=leer.nextInt();
+		
+		if (num1<0) {
+			System.out.println(num1 + " x " + num2 + " x " + num3 + " = " + (num1*num2*num3));
+		} else {
+			System.out.println(num1 + " + " + num2 + " + " + num3 + " = " + (num1+num2+num3));
+		}
+		
 	}
 
 }
