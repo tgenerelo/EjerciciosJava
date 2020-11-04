@@ -21,7 +21,7 @@ public class Ejercicio6 {
 		
 		if (num1>0) {
 			System.out.println("Cuadrado de " + num1 + ": " + (num1*num1));
-			System.out.println("Raíz cuadrada de " + num1 + ": " );
+			System.out.println("Raíz cuadrada de " + num1 + ": " + Math.sqrt(num1));
 		} else {
 			System.out.println("Error. El programa se cerrará.");
 		}
