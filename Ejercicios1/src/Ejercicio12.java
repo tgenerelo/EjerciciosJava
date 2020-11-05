@@ -10,7 +10,7 @@ public class Ejercicio12 {
 		int num = 0;
 
 		for (int i = 1; i <= 9; i++) {
-			System.out.println("Cuadrado de " + i + ": " + i * i + "");
+			System.out.println("Cuadrado de " + i + ": " + (i*i) + "");
 		}
 
 	}

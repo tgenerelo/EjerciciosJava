@@ -8,7 +8,7 @@ public class Ejercicio13 {
 		 * números naturales. N se leerá por teclado (no tenemos porque llamar a la
 		 * variable N, podemos llamarla como queramos).
 		 */
-
+		
 		int num = 0, suma = 0;
 		Scanner leer = new Scanner(System.in);
 
