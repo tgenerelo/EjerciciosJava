@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Ejercicio4 {
+public class Ejercicio04 {
 
 	public static void main(String[] args) {
 		/*Algoritmo que lea tres números distintos y nos diga cual de ellos es el mayor
