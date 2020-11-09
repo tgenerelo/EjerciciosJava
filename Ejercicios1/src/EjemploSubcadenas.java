@@ -1,5 +1,5 @@
 
-public class PruebaSubcadenas {
+public class EjemploSubcadenas {
 
 	public static void main(String[] args) {
 		
