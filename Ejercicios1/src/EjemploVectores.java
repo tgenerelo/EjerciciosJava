@@ -1,4 +1,4 @@
-package Ejercicios1_3;
+
 
 public class EjemploVectores {
 
@@ -10,13 +10,13 @@ public class EjemploVectores {
 		
 
 		
-		for (int i=0; i<tam; i++) {
+		for (int i=0; i<vNumeros.length; i++) {
 			System.out.println(vNumeros[i]);
 		}
 		
 		
 		for (int i=0; i<vNumeros.length; i++) {
-			for (int j=0; i<vNumeros[i].length; j++)
+			for (int j=0; i<vNumeros[i].length; j++);
 		}
 
 	}
