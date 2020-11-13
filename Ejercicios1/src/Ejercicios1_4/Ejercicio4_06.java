@@ -13,23 +13,42 @@ public class Ejercicio4_06 {
 		 */
 
 		Scanner leer = new Scanner(System.in);
-		String nombre = "nOmbrE apELLido", nombreFinal = "";
+		String nombre = "", nombre2 = "", nombreFinal = "";
 
-//		System.out.print("Escribe tu nombre: ");
-//		nombre = leer.nextLine();
+		System.out.print("Escribe tu nombre: ");
+		nombre = leer.nextLine();
 
-		nombre = " " + nombre;
-
+		// AÑADIR ESPACIO AL FINAL
+		 nombre = nombre + " ";
+		
+		// ELIMINAR ESPACIOS REPETIDOS
 		for (int i = 0; i < nombre.length(); i++) {
-			if (i == nombre.length() - 1 || nombre.substring(i, i + 1).equals(" ") == true
-					& nombre.substring(i + 1, i + 2).equals(" ") == false) {
-				nombreFinal = nombreFinal + nombre.toUpperCase().substring(i, i + 1);
+			if (i < nombre.length() - 1
+					&& nombre.substring(i, i + 1).equals(" ") & nombre.substring(i + 1, i + 2).equals(" ")) {
+
 			} else {
-				nombreFinal = nombreFinal + nombre.toLowerCase().substring(i, i + 1);
+				nombre2 = nombre2 + nombre.substring(i, i + 1);
 			}
 		}
 
-		System.out.println(nombreFinal);
+		for (int i = 0; i < nombre2.length(); i++) {
+			if (i == nombre2.length() - 1) {
+				break; // SI LAS SIGUIENTES CONDICIONES VAN A PROVOCAR UN OUT OF BOUNDS, BREAK
+			}
+			if (((nombre2.substring(i, i + 1).equals(" ")) & (nombre2.substring(i + 1, i + 2).equals(" ") == false))) {
+				if (i > 0 & nombre2.substring(i, i + 1).equals(" ")) {
+					nombreFinal = nombreFinal + " ";
+				}
+				i++;
+				nombreFinal = nombreFinal + nombre2.toUpperCase().substring(i, i + 1);
+
+			} else {
+				nombreFinal = nombreFinal + nombre2.toLowerCase().substring(i, i + 1);
+			}
+
+		}
+
+		System.out.println("Tu nombre correctamente escrito es: " + nombreFinal);
 	}
 
 }
