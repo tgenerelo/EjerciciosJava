@@ -33,7 +33,7 @@ public class Ejercicio4_06 {
 
 		for (int i = 0; i < nombre2.length(); i++) {
 			if (i == nombre2.length() - 1) {
-				break; // SI LAS SIGUIENTES CONDICIONES VAN A PROVOCAR UN OUT OF BOUNDS, BREAK
+				break; // SI LAS SIGUIENTES CONDICIONES VAN A PROVOCAR UN OUT OF BOUNDS, HACER UN BREAK
 			}
 			if (((nombre2.substring(i, i + 1).equals(" ")) & (nombre2.substring(i + 1, i + 2).equals(" ") == false))) {
 				if (i > 0 & nombre2.substring(i, i + 1).equals(" ")) {
