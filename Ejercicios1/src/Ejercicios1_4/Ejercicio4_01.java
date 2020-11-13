@@ -10,15 +10,17 @@ public class Ejercicio4_01 {
 		 * última letra a la primera: a partir de "Nacho" escribiría "ohcaN").
 		 */
 
-		String nombre = "";
-		Scanner leer=new Scanner(System.in);
-		
+		String nombre = "", nombreFinal = "";
+		Scanner leer = new Scanner(System.in);
+
 		System.out.print("Escribe tu nombre: ");
-		nombre=leer.next();
+		nombre = leer.nextLine();
 		
-		for (int i=(nombre.length()); i>0; i--) {
-			System.out.print(nombre.substring(i, i));
+		for (int i = 0; i<nombre.length(); i++) {
+			nombreFinal= (nombre.substring(i, i+1) + nombreFinal);
 		}
+		
+		System.out.print(nombreFinal);
 		
 	}
 
