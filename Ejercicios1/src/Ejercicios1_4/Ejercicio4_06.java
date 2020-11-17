@@ -19,7 +19,7 @@ public class Ejercicio4_06 {
 		nombre = leer.nextLine();
 
 		// AÑADIR ESPACIO AL FINAL
-		 nombre = nombre + " ";
+		 nombre = " " + nombre + " ";
 		
 		// ELIMINAR ESPACIOS REPETIDOS
 		for (int i = 0; i < nombre.length(); i++) {
